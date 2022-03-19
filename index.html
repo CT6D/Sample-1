@@ -30,6 +30,21 @@
 	.text {
 		text-align: center;
 	}
+
+	.background {
+		margin-top: 50px;
+		background-color: #F05E7C;
+		height: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: rgb(240, 94, 124);
+		background: linear-gradient(90deg, rgba(240, 94, 124, 1) 24%, rgba(240, 162, 94, 1) 100%);
+	}
+
+	#message {
+		color: white;
+	}
 </style>
 
 <head>
@@ -64,7 +79,10 @@
 				<header class="text">
 					<h1 id="title">Deniz</h1>
 					<p id="logo">BUTIK</p>
-					<p></p>
+					<div class="background">
+						<h3 id="message">Dresses for weddings and parties</h3>
+					</div>
+
 				</header>
 				<a href="#work" class="jumplink pic">
 					<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
