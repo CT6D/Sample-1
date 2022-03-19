@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Anglez';
+    src: local('Anglez Script'), local('Anglez-Script'),
+        url('Anglez-Script.woff2') format('woff2'),
+        url('Anglez-Script.woff') format('woff'),
+        url('Anglez-Script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
