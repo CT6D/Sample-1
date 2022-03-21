@@ -45,6 +45,56 @@
 	#message {
 		color: white;
 	}
+
+	.resize {
+		width: 15em;
+
+	}
+
+	.itemHolder {
+		display: flex;
+
+	}
+
+	.itemInfo {
+		margin-left: 50px;
+	}
+
+	.textStyle {
+		color: black;
+		font-weight: bold;
+		font-size: 35px;
+	}
+
+	.price {
+		color: #F05E7C;
+		font-weight: bold;
+	}
+
+	#size {
+		line-height: 1px;
+	}
+
+	#addItem {
+		font-size: 20px;
+		border-radius: 10px;
+	}
+
+	#dressInfo {
+		margin-top: 10px;
+	}
+
+	.margin {
+		margin-bottom: 10px;
+	}
+
+	#price {
+		line-height: 1px;
+	}
+
+	.rentDate {
+		margin-bottom: 10px;
+	}
 </style>
 
 <head>
@@ -98,6 +148,33 @@
 				<p style="text-align: center;">
 					Just be happy, we'll take care of the rest.
 				</p>
+				<div class="itemHolder">
+					<div><img src="images/dress2.jpg" class="resize" alt=""></div>
+					<div class="itemInfo">
+						<span class="textStyle">Dress sample 1</span>
+						<p id="dressInfo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A corrupti molestiae
+							fuga
+							officiis quis non quia, cupiditate assumenda, ducimus veritatis odio itaque suscipit, fugit
+							illo dolore ipsam maxime quod repellendus.</p>
+						<p id="size">Size information: </p>
+						<p id="price">Price: <span class="price">80$</span></p>
+						<div class="rentDate">
+							<div class="margin">
+								<label for="start">Start date: </label>
+
+								<input type="date" id="start" name="rent-start" value="2022-3-21" min="2022-8-9"
+									max="2022-8-9">
+							</div>
+							<div>
+								<label for="end">End date: </label>
+
+								<input type="date" id="end" name="end-rent" value="2022-3-21" min="2022-8-9"
+									max="2022-8-9">
+							</div>
+						</div>
+						<button id="addItem">Add to cart</button>
+					</div>
+				</div>
 				<section>
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
