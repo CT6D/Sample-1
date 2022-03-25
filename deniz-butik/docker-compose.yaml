@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  deniz-butik-fe: 
+    build: ./react-webpack-ts
+    container_name: deniz-butik-fe-con
+    ports:
+      - '4444:4444'
+    volumes:
+      - './react-webpack-ts:/deniz-butik-frontend'
+      - '/deniz-butik-frontend/node_modules'
+    stdin_open: true
+    # tty: true ---current bug w/ newer Docker version cannot see output logs from react app container, have to disable for the time being
